@@ -1,17 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import  TopNavbar  from './components/top-navbar';
+import TopNavbar  from './components/top-navbar';
+import Hem from './components/home';
+import Newton from './components/newton';
 
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
+    <Router>
       <TopNavbar/>
-      <header className="App-header">
-        <h1>Välkommen till Fysiklabbet!</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <h3>Fysiklabbet hjälper dig som pluggar fysik på högskola eller universitet</h3>
-      </header>
-    </div>
+      <Switch>
+        <Route exact={true}path="/" component={Hem}/>
+        <Route path="/newton" component={Newton}/>
+      </Switch>
+    </Router>
   );
 }
 
