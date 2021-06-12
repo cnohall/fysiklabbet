@@ -1,5 +1,5 @@
 import { Container, Image, Col} from "react-bootstrap";
-import newtonImage from '../images/newton.jpg'
+import newtonImage from '../../images/newton.jpg'
 
 function Newton() {
   return (
