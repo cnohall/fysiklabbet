@@ -3,7 +3,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 
 function TopNavbar() {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg">
     <Container>
       <LinkContainer to="/">
         <Navbar.Brand href="#home">Fysiklabbet</Navbar.Brand>
