@@ -1,12 +1,16 @@
 import { Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap'
+import logo from '../logo.svg';
+
 
 function TopNavbar() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
     <Container>
+
       <LinkContainer to="/">
-        <Navbar.Brand href="#home">Fysiklabbet</Navbar.Brand>
+
+        <Navbar.Brand href="#home"><img src={logo} className="App-logo-navbar" alt="logo" />Fysiklabbet</Navbar.Brand>
       </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
